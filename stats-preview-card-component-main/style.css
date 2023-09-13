@@ -1,0 +1,116 @@
+/******************** RESET **********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+
+/******************** GENERAL ********************/
+@font-face {
+    font-family: 'inter';
+    src: url(./Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'inter';
+    src: url(./Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'lexend_deca';
+    src: url(./Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+.root {
+    /******* Primary ******/
+    --Very-dark-blue-main-background: hsl(0233, 47%, 7%);
+    --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+    --Soft-violet-accent: hsl(277, 64%, 61%);
+    /******** Neutral ********/
+    --White-main-heading-stats: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-main-paragraph: hsl(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-stat-headings: hsl(0, 0%, 100%, 0.6);
+}
+body {
+    background-color: hsl(0233, 47%, 7%);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'inter-lexend_deca';
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2em;
+    font-family: 'inter';
+    src: url(./Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color:  hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-family: 'inter';
+    src: url(./Inter/static/Inter-ExtraBold.ttf);
+    font-weight: 700;
+
+}
+/****************** mine *****************/
+main {
+    height: 143vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: hsl(244, 38%, 16%);
+    width: 47%;
+    padding: 0em;
+    margin-bottom: 1em;
+    margin-top: 5em;
+    border-radius: 0.650em;
+}
+img {
+    color: hsl(277, 64%, 61%);
+    width: 100%;
+    border-top-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    margin-bottom: 3em;
+}
+.box p {
+    color: hsla(0, 0%, 100%, 0.61);
+    font-family: 'lexend_deca';
+    src: url(./Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+    font-weight: 400;    
+    font-size: 12px;
+    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+}
+
+/************** media query ****************/
+
+@media screen and (min-width: 375px) {
+    .box{
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .box{
+        width: 75%;
+    }
+}
+
+
+
+
+
+
